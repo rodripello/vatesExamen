@@ -25,12 +25,12 @@ public class testRestTemplateClima {
     @Autowired
     private TestRestTemplate testRestTemplate;
 
-    private final String apiKey = "nbjT0H9BWv9piErpTC9imV1G5QswtVTI";
+    private final String apiKey = "pjzAG9jAACMwiXiwKqYOMkUotSlHvGd5";
     private static final String CLIMA_URL = "http://dataservice.accuweather.com/currentconditions/v1/";
 
 
     @Test
-    public void testGetHotelesDisponiblesSuccess() throws URISyntaxException
+    public void testGetClimaApi() throws URISyntaxException
     {
         //Ingresamos la locationKey obtenidos en nuestras request
         String locationKey="10531";

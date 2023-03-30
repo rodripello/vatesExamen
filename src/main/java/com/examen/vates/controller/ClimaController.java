@@ -4,6 +4,7 @@ package com.examen.vates.controller;
 import com.examen.vates.response.ClimaResponse;
 import com.examen.vates.response.LocacionKeyResponse;
 import com.examen.vates.service.ClimaService;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -27,7 +28,7 @@ public class ClimaController {
                                       @RequestParam("ciudad") String ciudad){
         LocacionKeyResponse locacionKey =climaService.getLocacionKey(codigoPais,ciudad);
         if (locacionKey == null){
-            System.out.println("no hago nada");
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
         return new ResponseEntity<>(climaService.getClimaLocacion(locacionKey.getLocationKey(),
                 locacionKey.getRegion(), locacionKey.getPais(),locacionKey.getCiudad()), HttpStatus.OK);

@@ -28,7 +28,7 @@ public class testRestTemplateLocacion {
     @Autowired
     private TestRestTemplate testRestTemplate;
 
-    private final String apiKey = "nbjT0H9BWv9piErpTC9imV1G5QswtVTI";
+    private final String apiKey = "pjzAG9jAACMwiXiwKqYOMkUotSlHvGd5";
     private static final String LOCACION_URL = "http://dataservice.accuweather.com/locations/v1/";
 
 

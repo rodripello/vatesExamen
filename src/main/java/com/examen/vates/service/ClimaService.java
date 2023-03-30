@@ -24,7 +24,7 @@ public class ClimaService {
     @Autowired
     private ClimaRepository climaRepository;
 
-    private final String apiKey = "nbjT0H9BWv9piErpTC9imV1G5QswtVTI";
+    private final String apiKey = "pjzAG9jAACMwiXiwKqYOMkUotSlHvGd5";
     private static final String LOCACION_URL = "http://dataservice.accuweather.com/locations/v1/";
     private static final String CLIMA_URL = "http://dataservice.accuweather.com/currentconditions/v1/";
     private final RestTemplate restTemplate;

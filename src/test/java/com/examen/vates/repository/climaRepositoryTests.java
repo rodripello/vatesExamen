@@ -20,9 +20,9 @@ public class climaRepositoryTests {
     void testSaveClimaLocation(){
         //Recibimos una nueva peticion a guardar
         Clima clima = new Clima();
-        clima.setRegion("Europa");
-        clima.setPais("Francia");
-        clima.setCiudad("Paris");
+        clima.setRegion("Sur America");
+        clima.setPais("Argentina");
+        clima.setCiudad("Jujuy");
         clima.setFechaObservacion("29/03/2023");
         clima.setTemperatura("29.3");
         clima.setLlueve(true);

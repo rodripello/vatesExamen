@@ -1,18 +1,26 @@
 package com.examen.vates.response;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Map;
 
 public class ClimaResponse {
+
+    @JsonIgnore
     @JsonProperty("fechaObservacion")
     private final String fechaObservacion;
+
+    @JsonIgnore
     @JsonProperty("llueve")
     private final Boolean llueve;
+
+    @JsonIgnore
     @JsonProperty("climaDescripcion")
     private final String climaDescripcion;
 
+    @JsonIgnore
     @JsonProperty("temperatura")
     private final String temperatura;
 
